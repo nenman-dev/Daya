@@ -1,14 +1,18 @@
 * {
-    padding: 0;
-    margin: 0;
-    width: 100%;
     box-sizing: border-box;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    
+}
+.site-wrapper {
+    padding: 0;
+    width: 100%;
 }
 .main-header {
-    background: linear-gradient(#BFE9F7, #FFFF);
-    height: 261px;
-    width: 100%
+    width: 100%;
+    background: linear-gradient(#BFE9F7 0% );
 }
 .mini-header {
     display: flex;
@@ -19,7 +23,7 @@
     width: 90%;
     gap: 50px;
     margin: auto;
-    padding-top: 90px;
+    padding-top: 50px;
 }
 .mini-header > .logo > img {
     width: 208px;
@@ -32,9 +36,15 @@
     display: flex;
     flex-direction: row;
     font-size: 15px;
-      
     width: 50%;
-  
+    justify-content:space-between;
+    align-content: center;
+}
+
+.keys > a {
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
 }
 .sign-up  {
     display: flex;
@@ -43,43 +53,58 @@
     gap: 10px;
     color: #000000;
     font-size: 20px;
-    width: 20%
+    width: 15%;
 }
-button {
+.sign-up > button {
     border-radius: 34px;
     height:43.37px;
     background-color: rgb(120, 163, 56);
     border: none;  
     font-size: 20px;
     color: aliceblue;
+   
 }
 .white-header {
-    width: 80%;
+    width: 100%;
     margin: auto;
-    padding-bottom: 90px;
-    
+    background: linear-gradient(#BFE9F7 0%, #FFFF 10%);
 }
 .small-header {
    margin: auto;
-   padding-bottom: 60px;
    display: flex;
    flex-direction: row;
    align-items: center;
-   height:702px;
+   width: 80%;
 }
 .smaller.header{
     font-size: 40px;
     justify-content: left;
     flex: none;
     height: 100px;
-}
-.btn {
-    padding-top: 30px;
     width: 30%;
+    padding-bottom: 30px;
+}
+.btn > button{
+    border-radius: 34px;
+    height:43.37px;
+    background-color: rgb(120, 163, 56);
+    border: none;  
+    font-size: 20px;
+    color: aliceblue;
+    width: 25%;
+    
+   
 }
 .smaller-header > h2 {
     text-shadow:1px 1px #000000;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.smaller-header >  hr {
+    background: #FFA500;
+    margin-top: 10px;
+    padding-bottom: 2px;
+    border-radius: 5px;
+    width: 42%;
 }
 .smaller-header > p {
 font-size: 24px;
@@ -87,18 +112,111 @@ font-size: 24px;
 .smaller-header > .dive{
     font-size: 24px;
     padding-top: 20px;
-   
 }
 .smaller-header > .play {
-    padding-top : 30px;
+    padding-top : 20px;
     font-size: 32px;
+    padding-bottom: 10px;
 }
-.small-header > .phone {
-    padding-bottom: 120px;
+.phone >img {
+  padding-bottom: 30px;
+}
+.white-mid {
+    width: 100%
+}
+.mini-mid {
+    width: 60%;
     margin: auto;
-    height:702px;
-    width: 100%;
+}
+.rewards {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 20px;
+    margin: auto;
     
 }
+.mini-mid > hr {
+    background: #A79FF9;
+    margin-top: 10px;
+    height: 7px;
+    padding-bottom: 5px;
+    padding-bottom:5px;
+    border-radius: 18px;
+    width: 33%;
+    margin:auto;
+}
+.mini-mid > .four-img {
+    padding-top: 10px;
+    width: 60%;
+    margin: auto;
+    padding-bottom: 10px;;
+}
+.flip-shape {
+    display:flex;
+    flex-direction: row;
+    width: 80%
+}
+.flip-shape > .text {
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 30px;
+    margin: 0;
+    position: relative;
+    left: 10px;
+}
+.shape {
+    position: relative;
+    bottom: 110px;
+    right: 30px;
+    width: 190px;
+    height: 201px
+}
+.myBtn > button {
+    background-color: #1F6DA7;
+    border-radius: 34px;
+    height:43.37px;
+    border: none;  
+    font-size: 20px;
+    color: aliceblue;
+    width: 180px;
+}
+.myBtn {
+    padding-top: 20px;
+}
 
+.blue-mid {
+    width: 100%;
+}
 
+.b-mid {
+    width: 80%;
+    background: #292175;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    height: 403px;
+    border-radius: 30px;
+}
+
+.b-mid > img {
+    width: 506px;
+    height: 591.49px;
+    position: relative;
+    bottom: 60px;
+    left: 70px;
+}
+.b-mid > .blue-text {
+  text-align: right;
+  color: aliceblue;
+}
+
+.blue-text > hr {
+    background: #D7FBAC;
+    margin-top: 10px;
+    padding-bottom: 2px;
+    border-radius: 5px;
+    width: 10%;
+    margin: auto;
+   
+}
