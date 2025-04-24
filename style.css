@@ -1,10 +1,14 @@
+@font-face{
+    font-family: 'MyCustomFont';
+    src: url('fonts/Gilroy-Medium.ttf') format('truetype');
+  }
+  
 * {
     box-sizing: border-box;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:'MyCustomFont', Gilroy-Medium;
     margin: 0;
     width: 100%;
     padding: 0;
-    
 }
 .site-wrapper {
     padding: 0;
@@ -40,7 +44,6 @@
     justify-content:space-between;
     align-content: center;
 }
-
 .keys > a {
     text-align: center;
     text-decoration: none;
@@ -62,7 +65,6 @@
     border: none;  
     font-size: 20px;
     color: aliceblue;
-   
 }
 .white-header {
     width: 100%;
@@ -91,13 +93,10 @@
     border: none;  
     font-size: 20px;
     color: aliceblue;
-    width: 25%;
-    
-   
+    width: 25%;   
 }
 .smaller-header > h2 {
     text-shadow:1px 1px #000000;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 .smaller-header >  hr {
     background: #FFA500;
@@ -107,7 +106,7 @@
     width: 42%;
 }
 .smaller-header > p {
-font-size: 24px;
+    font-size: 24px;
 }
 .smaller-header > .dive{
     font-size: 24px;
@@ -119,7 +118,7 @@ font-size: 24px;
     padding-bottom: 10px;
 }
 .phone >img {
-  padding-bottom: 30px;
+    padding-bottom: 30px;
 }
 .white-mid {
     width: 100%
@@ -129,12 +128,10 @@ font-size: 24px;
     margin: auto;
 }
 .rewards {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 25px;
     text-align: center;
     padding-bottom: 20px;
-    margin: auto;
-    
+    margin: auto;    
 }
 .mini-mid > hr {
     background: #A79FF9;
@@ -184,11 +181,11 @@ font-size: 24px;
 .myBtn {
     padding-top: 20px;
 }
-
 .blue-mid {
     width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
-
 .b-mid {
     width: 80%;
     background: #292175;
@@ -197,26 +194,178 @@ font-size: 24px;
     margin: auto;
     height: 403px;
     border-radius: 30px;
+    position: relative;
 }
-
 .b-mid > img {
     width: 506px;
     height: 591.49px;
     position: relative;
-    bottom: 60px;
+    bottom: 100px;
     left: 70px;
 }
 .b-mid > .blue-text {
-  text-align: right;
+  text-align: center;
   color: aliceblue;
 }
-
 .blue-text > hr {
     background: #D7FBAC;
     margin-top: 10px;
     padding-bottom: 2px;
     border-radius: 5px;
-    width: 10%;
+    width: 80%;
+    position: relative;
+    left: 5px;
     margin: auto;
-   
+    justify-content: center;
+}
+ .blue-text {
+    width: 40%;
+    position: relative;
+    left: 10px;
+    margin: auto;
+    justify-content: center;
+}
+ .blue-text > h1{
+    font-size:36px;
+    padding-bottom: 10px;
+}
+ .blue-text > p {
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+ .play-btn > button {
+    background-color: #F0DD91;
+    border-radius: 34px;
+    height:43.37px;
+    border: none;  
+    font-size: 20px;
+    color: rgb(12, 12, 12);
+    width: 180px;
+}
+.first-footer {   
+    padding-top: 100px;
+    width: 100%;
+    background: linear-gradient(#FBFEFF 0%, #92C557 100%);
+}
+.mini-footer {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+}
+.white-footer {
+    width : 40%;
+    margin: auto;
+    line-height: 1.5em;
+    justify-items: left; 
+}
+.white-footer > .text {
+    padding-bottom: 25px;
+}
+.text > h1 {
+    font-size: 25px;
+    line-height: 1em;
+}
+.white-footer > button {
+    background:#A79FF9;
+    color: aliceblue;
+    border-radius: 34px;
+    height:43.37px;
+    border: none;  
+    font-size: 20px;
+    width: 180px;
+}
+.image-box {
+    position: relative;
+    width: 50%;
+    height: auto;
+}
+.image-box > .box  {
+    width: 417px;
+    right: 50px;
+    height: 465px;
+    position: relative;
+    left: 190px;
+}
+.image-box > .data {
+    position: absolute;
+    bottom: 15px;
+    left: -100px;
+    width: 646px;
+    height:425px;
+    border-radius: 75px;
+}
+.image-box > .small {
+    position: absolute;
+    top: 300px;
+    left: 560px;
+    width: 88px;
+    height:82px;
+    border-radius: 30px;
+}
+.dark {
+    width: 100%;
+    background: linear-gradient( #92C557 100%);
+}
+.inner-dark {
+    width: 95%;
+    background: black;
+    color:aliceblue;
+    margin: auto;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    
+}
+.inner-footer {
+    width:70%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;;
+    padding-top: 15px;
+    line-height: 2.5em;
+    font-size: 15px;
+}
+.inner-footer > 
+.first,
+.fourth {
+    width: 30%;
+}
+
+.inner-footer >
+.second, .third {
+    width: 20%
+}
+.first > .sub {
+    font-size: 12px;
+    padding-bottom: 5px;
+
+}
+.first > .logo {
+    width: 141px;
+    height: 44px;
+}
+.first > button {
+    background : #92C557;
+    border-radius: 20px;
+    width: 100px;
+    height: 31px;
+    font-weight:bold;
+}
+.social-icon{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    gap: 10px;
+    
+}
+.social-icon > img {
+    width:16px;
+    height: 19px;
+}
+.digital, .us, .need {
+    color: #92C557;
+    font-size: 17px;
 }
