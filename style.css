@@ -78,13 +78,11 @@
    align-items: center;
    width: 80%;
 }
-.smaller.header{
-    font-size: 40px;
+.smaller-header{
+    font-size: 20px;
     justify-content: left;
     flex: none;
-    height: 100px;
-    width: 30%;
-    padding-bottom: 30px;
+    width: 40%;
 }
 .btn > button{
     border-radius: 34px;
@@ -96,14 +94,14 @@
     width: 25%;   
 }
 .smaller-header > h2 {
-    text-shadow:1px 1px #000000;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
 }
 .smaller-header >  hr {
     background: #FFA500;
     margin-top: 10px;
-    padding-bottom: 2px;
+    padding-bottom: 7px;
     border-radius: 5px;
-    width: 42%;
+    width: 53%;
 }
 .smaller-header > p {
     font-size: 24px;
@@ -115,7 +113,7 @@
 .smaller-header > .play {
     padding-top : 20px;
     font-size: 32px;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
 }
 .phone >img {
     padding-bottom: 30px;
@@ -247,6 +245,7 @@
     padding-top: 100px;
     width: 100%;
     background: linear-gradient(#FBFEFF 0%, #92C557 100%);
+    padding-bottom: 200px;
 }
 .mini-footer {
     display: flex;
@@ -316,24 +315,25 @@
     margin: auto;
     border-top-right-radius: 40px;
     border-top-left-radius: 40px;
-    
 }
 .inner-footer {
-    width:70%;
+    width:80%;
     margin: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;;
     padding-top: 15px;
     line-height: 2.5em;
     font-size: 15px;
+}
+.links > a {
+    text-decoration:none;
+    color: aliceblue;
 }
 .inner-footer > 
 .first,
 .fourth {
     width: 30%;
 }
-
 .inner-footer >
 .second, .third {
     width: 20%
@@ -341,7 +341,6 @@
 .first > .sub {
     font-size: 12px;
     padding-bottom: 5px;
-
 }
 .first > .logo {
     width: 141px;
@@ -359,7 +358,10 @@
     flex-direction: row;
     align-items:center;
     gap: 10px;
-    
+}
+.social-icon > a {
+    text-decoration: none;
+    color: aliceblue;
 }
 .social-icon > img {
     width:16px;
@@ -368,4 +370,150 @@
 .digital, .us, .need {
     color: #92C557;
     font-size: 17px;
+}
+.inner-dark > .last {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 15px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    align-items: center;
+    gap: 35%;
+    padding-left: 30px;
+}
+.last > .conditions {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.second .links  a,
+.fourth  a,
+.third  a,
+.conditions > a {
+    text-decoration:none;
+    color: aliceblue;
+    cursor: pointer;
+}
+.keys a:hover,
+.second .links  a:hover,
+.fourth  a:hover,
+.third a:hover,
+.conditions a:hover {
+    color: #92C557;
+}
+ 
+
+
+
+.white {
+    width: 100%;
+    margin: auto;
+    background: linear-gradient(#BFE9F7 0%, #FFFF 70%);
+}
+.little-header {
+   margin: auto;
+   display: flex;
+   flex-direction: row;
+   width: 60%;
+   text-align: center;
+}
+.littler-header{
+    font-size: 20px;
+    justify-content: left;
+    flex: none;
+    width: 50%;
+    margin: auto;
+}
+.littler-header > h2 {
+    color: #000000;
+    padding-bottom: 20px;
+    padding-top: 50px;
+}
+.littler-header >  hr {
+    background: #FFA500;
+    margin-top: 10px;
+    padding-bottom: 7px;
+    margin: auto;
+    border-radius: 5px;
+    width: 55%;
+}
+.littler-header > .earn{
+    font-size: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.btn > button{
+    border-radius: 34px;
+    height:43.37px;
+    background-color: rgb(120, 163, 56);
+    border: none;  
+    font-size: 20px;
+    color: aliceblue;
+    width: 30%;   
+}
+.white-images {
+    display: flex;
+    flex-direction: row;
+    width:80%;
+    margin: auto;
+}
+.people {
+    margin:auto;
+    width: 80%;
+    align-content: center;
+    align-items: center;
+    padding-left: 20%
+}
+.people > img {
+    width: 616px;
+    height: 645px;
+}
+.hex {
+    width: 20%;
+    position: relative;
+    top: 350px;
+    right: 20px;
+}
+.hex > img {
+    width: 190px;
+    height: 201px;
+}
+.mid-section {
+    width: 80%;
+    line-height: 1.5em;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+   
+}
+.green-footer {
+padding-top: 50px;
+}
+.mini-green {
+    width: 85%;
+    background:#D7FBAC;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    border-radius: 30px;
+    height:400px;
+}
+.green-text {
+    width: 60%;
+    align-content: center;
+    padding-left: 10%;
+}
+.mini-green > .man {
+    width: 40%;
+    position: absolute;
+    right: 110px;
+}
+.man > img {
+    width: 490px;
+    height: 501px;
+    
 }
