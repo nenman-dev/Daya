@@ -192,7 +192,6 @@
     margin: auto;
     height: 403px;
     border-radius: 30px;
-    position: relative;
 }
 .b-mid > img {
     width: 506px;
@@ -245,7 +244,7 @@
     padding-top: 100px;
     width: 100%;
     background: linear-gradient(#FBFEFF 0%, #92C557 100%);
-    padding-bottom: 200px;
+    padding-bottom: 150px;
 }
 .mini-footer {
     display: flex;
@@ -255,13 +254,14 @@
     justify-content: space-between;
 }
 .white-footer {
-    width : 40%;
+    width : 35%;
     margin: auto;
     line-height: 1.5em;
     justify-items: left; 
 }
 .white-footer > .text {
     padding-bottom: 25px;
+   
 }
 .text > h1 {
     font-size: 25px;
@@ -278,28 +278,28 @@
 }
 .image-box {
     position: relative;
-    width: 50%;
+    width: 40%;
     height: auto;
 }
 .image-box > .box  {
     width: 417px;
     right: 50px;
-    height: 465px;
+    height: 420px;
     position: relative;
-    left: 190px;
+    left: 70px;
 }
 .image-box > .data {
     position: absolute;
     bottom: 15px;
     left: -100px;
-    width: 646px;
-    height:425px;
+    width: 546px;
+    height:380px;
     border-radius: 75px;
 }
 .image-box > .small {
     position: absolute;
     top: 300px;
-    left: 560px;
+    left: 460px;
     width: 88px;
     height:82px;
     border-radius: 30px;
@@ -372,8 +372,8 @@
     font-size: 17px;
 }
 .inner-dark > .last {
-    width: 75%;
-    margin: auto;
+    width: 90%;
+  
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -388,6 +388,10 @@
     display: flex;
     flex-direction: row;
     text-align: center;
+}
+.last > .copyright {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 100px;
 }
 .second .links  a,
 .fourth  a,
@@ -487,15 +491,13 @@
     justify-content: center;
     margin: auto;
     text-align: center;
-   
 }
 .green-footer {
-padding-top: 50px;
+padding-top: 70px;
 }
 .mini-green {
-    width: 85%;
+    width: 75%;
     background:#D7FBAC;
-    justify-content: space-between;
     display: flex;
     flex-direction: row;
     margin: auto;
@@ -506,14 +508,137 @@ padding-top: 50px;
     width: 60%;
     align-content: center;
     padding-left: 10%;
+    line-height: 1.5em;
 }
-.mini-green > .man {
-    width: 40%;
-    position: absolute;
-    right: 110px;
+.green-text > h1 {
+    padding-bottom: 20px;
+    line-height:1em;
 }
-.man > img {
+.mini-green > img  {
     width: 490px;
-    height: 501px;
+    height: 503px;
+    position: relative;
+    right: 10px;
+    bottom:50px;
+}
+.blue-footer {
+    width: 100%;
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
+.mini-blue {
+    width: 75%;
+    background: #AADCEB;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    height: 403px;
+    border-radius: 30px;
+}
+.mini-blue > img {
+    width: 490px;
+    height: 503px;
+    position: relative;
+    bottom: 45px;
+    left: 20px;
+}
+.mini-blue > .the-text {
+  color:#000000
+}
+ .the-text {
+    width: 40%;
+    position: relative;
+    left: 10px;
+    margin: auto;
+    justify-content: center;
+    line-height: 1.5em;
+}
+ .the-text > h1{
+    font-size:30px;
+    padding-bottom: 20px;
+    padding-top: 15px;
     
+}
+ .the-text > p {
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.coins {
+    width: 100%
+}
+.three-coins {
+    width: 70%;
+    margin: auto;
+}
+.three-coins > .started {
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    justify-items: center;
+    font-size: 45px;
+    padding-bottom: 15px;
+}
+.trained {
+    display:flex;
+    flex-direction: row;
+    margin: auto;
+    gap: 100px;
+    justify-content: space-between;
+    align-content: center;
+}
+.small-coin > img {
+    width: 313px;
+    height: 210px;
+}
+.trained > h1 {
+    text-align: center;
+}
+.emoji, .tick, .small-coin > .under {
+    text-align: center;
+}
+.under > h1 {
+    font-size: 30px;
+    padding-bottom: 5px;
+}
+.daya-squad {
+    padding-top: 70px;
+    padding-bottom: 50px;
+    background: linear-gradient(#FBFEFF 40%, #92C557 100%);
+}
+.mini-daya {
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+.squad-text {
+    width: 50%;
+    align-content: center;
+    line-height: 1.5em;
+}
+.squad-text > h1 {
+    padding-bottom: 30px;
+    line-height:1em;
+}
+.squad-btn > button{
+    border-radius: 34px;
+    height:43.37px;
+    background-color:#A79FF9;
+    border: none;  
+    font-size: 20px;
+    color: aliceblue;
+    width: 30%;
+    position: relative;
+    left: 67%;
+
+}
+.mini-daya > .squad {
+    width: 60%
+}
+.mini-squad > img  {
+    width: 350px;
+    height: 403px;
+    position: relative;
+    bottom:50px;
 }
