@@ -642,3 +642,66 @@ padding-top: 70px;
     position: relative;
     bottom:50px;
 }
+
+
+
+.about {
+    width: 100%;
+    margin: auto;
+    background: linear-gradient(#BFE9F7 0%, #FFFF 70%);
+}
+.little-about {
+   margin: auto;
+   display: flex;
+   flex-direction: row;
+   width: 60%;
+   text-align: center;
+}
+.littler-about{
+    font-size: 20px;
+    justify-content: left;
+    flex: none;
+    width: 50%;
+    margin: auto;
+}
+.littler-about > h2 {
+    color: #000000;
+    padding-bottom: 20px;
+    padding-top: 50px;
+}
+.littler-about >  hr {
+    background: #FFA500;
+    margin-top: 10px;
+    padding-bottom: 7px;
+    margin: auto;
+    border-radius: 5px;
+    width: 70%;
+}
+.littler-about > .transform{
+    font-size: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.map {
+    margin:auto;
+    width: 80%;
+    align-content: center;
+    align-items: center;
+    padding-left: 20%
+}
+.map > img {
+    width: 500px;
+    height: 565px;
+}
+.african-population {
+    width: 100%;
+    padding-top: 20px;
+    background: linear-gradient(#FBFEFF 0%, #92C557 100%);
+    padding-bottom: 50px;
+}
+.population {
+    width : 50%;
+    margin: auto;
+    text-align: center;
+    line-height: 1.5em;
+}
