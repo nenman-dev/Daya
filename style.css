@@ -74,11 +74,18 @@
 .sign-up > button {
     border-radius: 34px;
     height:43.37px;
-    background-color: rgb(120, 163, 56);
-    border: none;  
+    border: 1px solid transparent;  
     font-size: 20px;
     color: aliceblue;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    background-color: rgb(120, 163, 56);
 }
+.sign-up > button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid rgb(120, 163, 56);
+  }
 @media (max-width: 768px) {
     .sign-up > button {
         display: none;
@@ -101,7 +108,6 @@
        width: 100%;
     }
 }
-
 @media (max-width: 768px) {
     .small-header {
         flex-direction: column;
@@ -128,7 +134,17 @@
     font-size: 20px;
     color: aliceblue;
     width: 25%;   
+    cursor: pointer;
+    transition-duration: 0.4s;
 }
+
+.btn> button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid rgb(120, 163, 56);
+  }
+
+
 @media (max-width: 768px) {
     .btn > button {
         width: 45%!important;
@@ -266,7 +282,15 @@
     font-size: 20px;
     color: aliceblue;
     width: 180px;
+    cursor: pointer;
+    transition-duration: 0.4s;
 }
+.myBtn> button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid #1F6DA7;
+  }
+
 .myBtn {
     padding-top: 20px;
 }
@@ -312,6 +336,7 @@
     .b-mid > img {
         width: 100%;
         height: auto;
+        left: 20px
     }
 }
 .b-mid > .blue-text {
@@ -349,6 +374,7 @@
         background: #292175;
         padding-top: 10px;
         padding-bottom: 15px;
+        left: 0px;
     }
 }
  .blue-text > h1{
@@ -379,6 +405,13 @@
     font-size: 20px;
     color: rgb(12, 12, 12);
     width: 180px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.play-btn> button:hover {
+    background-color: black;
+    color: #F0DD91;
+    border: 1px solid #F0DD91;
 }
 
 .first-footer {   
@@ -414,12 +447,10 @@
 @media (max-width: 768px) {
     .white-footer  {
         width: 100%; 
-    
     }
 }
 .white-footer > .text {
     padding-bottom: 25px;
-   
 }
 @media (max-width: 768px) {
     .white-footer > .text {
@@ -441,7 +472,6 @@
     line-height: 1em;
     padding-top: 20px;
 }
-
 .white-footer > button {
     background:#A79FF9;
     color: aliceblue;
@@ -450,6 +480,13 @@
     border: none;  
     font-size: 20px;
     width: 180px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.white-footer > button:hover {
+    background-color:white;
+    color: black;
+    border: 1px solid #A79FF9;
 }
 @media (max-width: 768px) {
     .white-footer > button {
@@ -487,7 +524,7 @@
         height: auto;
         border-radius: 20px;
         position: relative;
-        left: 2px
+        left: 20px;
     }
 }
 .image-box > .small {
@@ -556,8 +593,10 @@
 @media (max-width: 768px) {
     .inner-footer > .second, .third {
         width: 100%;
-       
     }
+}
+.first > .connect {
+    width: 70%;
 }
 .first > .sub {
     font-size: 12px;
@@ -585,6 +624,13 @@
     width: 100px;
     height: 31px;
     font-weight:bold;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.first > button:hover {
+    background-color:white;
+    color: black;
+    border: 2px solid #92C557;
 }
 @media (max-width: 768px) {
     .first > button {
@@ -634,7 +680,6 @@
     .inner-dark > .last{
        gap: 30%;
        flex-direction: column-reverse;
-    
     }
 }
 .last > .conditions {
@@ -729,7 +774,15 @@
     border: none;  
     font-size: 20px;
     color: aliceblue;
-    width: 30%;   
+    width: 30%;
+    cursor: pointer;
+    transition-duration: 0.4s;
+       
+}
+.btn > button:hover {
+    background-color:white;
+    color: black;
+    border: 2px solid #92C557;
 }
 .white-images {
     display: flex;
@@ -746,8 +799,8 @@
 }
 @media (max-width: 768px) {
     .people {
-        padding-left: 0%;
         width: 100%;
+        padding-left: 7%;
     }
 }
 .people > img {
@@ -791,6 +844,11 @@
 .green-footer {
     padding-top: 70px;
 }
+@media (max-width: 768px) {
+    .green-footer{
+       padding-bottom: 63%;
+    }
+}
 .mini-green {
     width: 75%;
     background:#D7FBAC;
@@ -804,7 +862,8 @@
     .mini-green{
         flex-direction: column;
         width:90%;
-        padding: 25px;
+        padding: 30px;
+        height: 300px;
     }
 }
 .green-text {
@@ -815,14 +874,13 @@
 }
 @media (max-width: 768px) {
     .green-text{
-        width:100%;
-        padding-bottom: 20px;
-
+        width:100%;  
     }
 }
 .green-text > h1 {
     padding-bottom: 20px;
-    line-height:1em;
+    line-height:1.3em;
+
 }
 @media (max-width: 768px) {
     .green-text > h1{
@@ -838,15 +896,23 @@
 }
 @media (max-width: 768px) {
     .mini-green > img {
-        padding-top: 20%;
-        width:auto;
-        padding: 25px;
+        padding-top: 40%;
+        width:400px;
+        height: auto;
+        right: 15px;
     }
 }
 .blue-footer {
     width: 100%;
-    padding-top: 120px;
+    padding-top: 5%;
     padding-bottom: 100px;
+}
+@media (max-width: 768px) {
+    .blue-footer{
+        padding-top: 0%;
+        margin: auto;
+        padding-bottom: 1px;
+    }
 }
 .mini-blue {
     width: 75%;
@@ -857,6 +923,15 @@
     height: 403px;
     border-radius: 30px;
 }
+@media (max-width: 768px) {
+    .mini-blue{
+        flex-direction: column-reverse;
+        background: none;
+        height: auto;
+        padding-top: 35%;
+        width: 100%;
+    }
+}
 .mini-blue > img {
     width: 490px;
     height: 503px;
@@ -864,8 +939,14 @@
     bottom: 45px;
     left: 20px;
 }
-.mini-blue > .the-text {
-  color:#000000
+@media (max-width: 768px) {
+    .mini-blue > img{
+        width: 80%;
+        height: auto;
+        padding-top: 20%;
+        border-radius: 30px;
+        left: 45px;
+    }
 }
  .the-text {
     width: 40%;
@@ -874,11 +955,23 @@
     margin: auto;
     justify-content: center;
     line-height: 1.5em;
+    color: #000000;
+}
+@media (max-width: 768px) {
+    .mini-blue > .the-text{
+        background: #AADCEB;
+        width: 80%;
+        padding: 30px;
+        border-radius: 30px;
+        margin: auto;
+        left: 0px;
+    }
 }
  .the-text > h1{
     font-size:30px;
     padding-bottom: 20px;
     padding-top: 15px;
+    line-height: 1.2em;
     
 }
  .the-text > p {
@@ -909,9 +1002,30 @@
     justify-content: space-between;
     align-content: center;
 }
+@media (max-width: 768px) {
+    .trained{
+       flex-direction: column;
+       gap: 40px;
+    }
+}
 .small-coin > img {
     width: 313px;
     height: 210px;
+}
+@media (max-width: 768px) {
+    .small-coin > img {
+        width: 300px;
+        height: auto;
+        position: relative;
+        right: 10px
+    }
+}
+@media (max-width: 768px) {
+    .emoji, .tick > img {
+        width: 210px;
+        height: auto;
+        margin: auto;
+    }
 }
 .trained > h1 {
     text-align: center;
@@ -923,10 +1037,20 @@
     font-size: 30px;
     padding-bottom: 5px;
 }
+@media (max-width: 768px) {
+    .under > p{
+        font-size: 20px;
+    }
+}
 .daya-squad {
-    padding-top: 70px;
+    padding-top: 100px;
     padding-bottom: 50px;
     background: linear-gradient(#FBFEFF 40%, #92C557 100%);
+}
+@media (max-width: 768px) {
+    .daya-squad{
+      padding-bottom: 20px;
+    }
 }
 .mini-daya {
     width: 85%;
@@ -934,16 +1058,42 @@
     flex-direction: row;
     margin: auto;
 }
+@media (max-width: 768px) {
+    .mini-daya{
+        width: 100%;
+        flex-direction:column ;
+    }
+}
 .squad-text {
     width: 50%;
     align-content: center;
     line-height: 1.5em;
 }
+@media (max-width: 768px) {
+    .squad-text{
+        width: 90%;
+         text-align: center;
+         font-size: 18px;
+         margin: auto;
+         padding-bottom: 50px;
+    }
+}
 .squad-text > h1 {
     padding-bottom: 30px;
     line-height:1em;
 }
-.squad-btn > button{
+
+.squad-btn {
+    display: flex;
+    justify-content: end;
+}
+
+@media (max-width: 768px){
+    .squad-btn {
+        justify-content: center;
+    }
+}
+.squad-btn > button {
     border-radius: 34px;
     height:43.37px;
     background-color:#A79FF9;
@@ -952,30 +1102,59 @@
     color: aliceblue;
     width: 30%;
     position: relative;
-    left: 67%;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
 
+.squad-btn > button:hover {
+    background-color:white;
+    color: black;
+    border: 2px solid #A79FF9;
+}
+
+@media (max-width: 768px) {
+    .squad-btn > button {
+      width: 40%;
+    }
 }
 .mini-daya > .squad {
     width: 60%
 }
-.mini-squad > img  {
-    width: 350px;
-    height: 403px;
+@media (max-width: 768px) {
+    .mini-daya > .squad{
+       width: 80%;
+    }
+}
+.mini-daya > img  {
+    width: 300px;
+    height: 203x;
     position: relative;
     bottom:50px;
 }
-
+@media (max-width: 768px) {
+    .mini-daya > img{
+        margin: auto;
+       height: auto;
+       padding-top: 80px;
+    }
+}
 .about {
     width: 100%;
     margin: auto;
     background: linear-gradient(#BFE9F7 0%, #FFFF 70%);
 }
+
 .little-about {
    margin: auto;
    display: flex;
    flex-direction: row;
    width: 60%;
    text-align: center;
+}
+@media (max-width: 768px) {
+    .little-about{
+      width: 100%
+    }
 }
 .littler-about{
     font-size: 20px;
@@ -984,18 +1163,34 @@
     width: 50%;
     margin: auto;
 }
+@media (max-width: 768px) {
+    .littler-about{
+      width: 85%
+    }
+}
 .littler-about > h2 {
     color: #000000;
     padding-bottom: 20px;
     padding-top: 50px;
+}
+@media (max-width: 768px) {
+    .littler-about > h2{
+        font-size: 30px;
+    }
 }
 .littler-about >  hr {
     background: #FFA500;
     margin-top: 10px;
     padding-bottom: 7px;
     margin: auto;
+    border: none;
     border-radius: 5px;
     width: 70%;
+}
+@media (max-width: 768px) {
+    .littler-about > hr{
+        width: 50%;
+    }
 }
 .littler-about > .transform{
     font-size: 24px;
@@ -1009,9 +1204,23 @@
     align-items: center;
     padding-left: 20%
 }
+@media (max-width: 768px) {
+    .map{
+       padding-left: 0;
+       width: 60%;
+    }
+}
 .map > img {
     width: 500px;
     height: 565px;
+}
+@media (max-width: 768px) {
+    .map > img {
+       width: 400px;
+       height: auto;
+       position: relative;
+       right: 25%;
+    }
 }
 .african-population {
     width: 100%;
@@ -1024,4 +1233,9 @@
     margin: auto;
     text-align: center;
     line-height: 1.5em;
+}
+@media (max-width: 768px) {
+    .population {
+      width: 80%;
+    }
 }
