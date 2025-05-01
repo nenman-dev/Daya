@@ -3,13 +3,10 @@
         font-size: 10pt;
     }
 }
-
-
 @font-face{
     font-family: 'MyCustomFont';
     src: url('fonts/Gilroy-Medium.ttf') format('truetype');
   }
-
 * {
     box-sizing: border-box;
     font-family:'MyCustomFont', Gilroy-Medium;
@@ -43,14 +40,15 @@
 .mini-header > .logo {
     width :20%;
 }
+
 .keys {
     display: flex;
     flex-direction: row;
     font-size: 15px;
     width: 50%;
     justify-content:space-between;
-    align-content: center;
-    color: black
+    align-items: center;
+    color: black;
 }
 .keys > a {
     text-align: center;
@@ -65,31 +63,60 @@
     background-color:#92C557;
     color: black
 }
-.keys > .icon {
-    display: none
+.keys > .icon,
+.mobile-menu {
+    display: none;
+    
 }
 @media (max-width: 768px) { 
-    .keys a:not(:last-child) {display:none;}
-    .keys a.icon {
+    .keys  {
+        width: 100%;
+        position: relative;
+    }
+    .keys a:not(.icon) {
+        display: none;
+    }
+    .keys > .icon {
         float: right;
         display: block;
+        position:absolute;
+        left: 80%;
+        font-size: 28px;
+        cursor: pointer;
+        padding: 14px 16px;
     }
-    .keys {
+   
+    .icon {
+        display: none;
+    }
+    .mobile-menu {
+        display: none;
         flex-direction: column;
-        align-items: flex-start;
-        position:relative;
-    }
-    .keys.responsive a {
-        display:block;
-        width: 100%;
-        float: none;
-        text-align: center;
-    }
-    .keys.responsive a.icon {
-        position: absolute;
+        background-color: #000000;
+        position: fixed;
+        top: 70px;
         right: 0;
-        top: 0;
+        width: 100vw;
+        height: 100vh;;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
+
     }
+    .mobile-menu a {
+        text-decoration: none;
+        color:aliceblue;
+        padding: 20px 0;
+        font-size: 28px;
+        text-align: center;
+       
+    }
+    .mobile-menu a:hover {
+        color: #92C557; 
+    }  
+    .mobile-menu.active {
+        display: flex;
+    }
+  
 }
 .sign-up  {
     display: flex;
@@ -100,7 +127,6 @@
     font-size: 20px;
     width: 15%;
 }
-
 .sign-up > button {
     border-radius: 34px;
     height:43.37px;
@@ -167,14 +193,11 @@
     cursor: pointer;
     transition-duration: 0.4s;
 }
-
 .btn> button:hover {
     background-color: white;
     color: black;
     border: 1px solid rgb(120, 163, 56);
   }
-
-
 @media (max-width: 768px) {
     .btn > button {
         width: 45%!important;
@@ -214,7 +237,6 @@
     font-size: 32px;
     padding-bottom: 30px;
 }
-
 .phone >img {
     padding-bottom: 30px;
 }
@@ -319,8 +341,7 @@
     background-color: white;
     color: black;
     border: 1px solid #1F6DA7;
-  }
-
+}
 .myBtn {
     padding-top: 20px;
 }
@@ -351,8 +372,7 @@
 @media (max-width: 768px) {
     .b-mid {
         background: none;
-        flex-direction: column;
-        
+        flex-direction: column; 
     }
 }
 .b-mid > img {
@@ -407,7 +427,7 @@
         left: 0px;
     }
 }
- .blue-text > h1{
+.blue-text > h1{
     font-size:36px;
     padding-bottom: 10px;
 }
@@ -417,7 +437,7 @@
         padding-top: 15px;
     }
 }
- .blue-text > p {
+.blue-text > p {
     font-size: 20px;
     padding-top: 20px;
     padding-bottom: 30px;
@@ -427,7 +447,7 @@
        width: 100%;
     }
 }
- .play-btn > button {
+.play-btn > button {
     background-color: #F0DD91;
     border-radius: 34px;
     height:43.37px;
@@ -443,7 +463,6 @@
     color: #F0DD91;
     border: 1px solid #F0DD91;
 }
-
 .first-footer {   
     padding-top: 100px;
     width: 100%;
