@@ -107,6 +107,7 @@
         font-size: 28px;
         cursor: pointer;
         width: 50%;  
+        z-index: 1000;
     }
     .icon {
         display: none;
@@ -155,6 +156,15 @@
         background-color: white;
         color: black;
         border: 1px solid rgb(120, 163, 56);          
+    }
+    .close-icon {
+        position: relative;
+        top: 20px;
+        text-align: right;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+        z-index: 10000;
     }
 }
 .sign-up  {
@@ -909,13 +919,11 @@
     width: 55%;
     border: none;
 }
-.littler-header > .transform {
-    font-family: 'Gilroy-Regular';
-}
 .littler-header > .earn{
     font-size: 24px;
     padding-top: 20px;
     padding-bottom: 20px;
+    font-family: 'Gilroy-Regular';
 }
 .btn > button{
     border-radius: 34px;
@@ -927,6 +935,7 @@
     width: 30%;
     cursor: pointer;
     transition-duration: 0.4s;
+    font-family: 'Gilroy-SemiBold';
        
 }
 .btn > button:hover {
@@ -985,6 +994,7 @@
     justify-content: center;
     margin: auto;
     text-align: center;
+    font-family: 'Gilroy-Medium';
 }
 @media (max-width: 768px) {
     .mid-section {
@@ -1030,12 +1040,15 @@
 .green-text > h1 {
     padding-bottom: 20px;
     line-height:1.3em;
-
+    font-family: 'Gilroy-Bold';
 }
 @media (max-width: 768px) {
     .green-text > h1{
         font-size: 20px;
     }
+}
+.green-text > ul {
+    font-family:'Gilroy-Regular';
 }
 .mini-green > img {
     width: 490px;
@@ -1046,10 +1059,10 @@
 }
 @media (max-width: 768px) {
     .mini-green > img {
-        padding-top: 40%;
-        width:400px;
+        padding-top: 30%;
+        width:350px;
         height: auto;
-        right: 5px;
+        right: 35px;
     }
 }
 .blue-footer {
@@ -1078,7 +1091,7 @@
         flex-direction: column-reverse;
         background: none;
         height: auto;
-        padding-top: 35%;
+        padding-top: 50%;
         width: 100%;
     }
 }
@@ -1122,12 +1135,14 @@
     padding-bottom: 20px;
     padding-top: 15px;
     line-height: 1.2em;
+    font-family: 'Gilroy-Bold';
     
 }
- .the-text > p {
+ .the-text > ul {
     font-size: 20px;
     padding-top: 20px;
     padding-bottom: 30px;
+    font-family: 'Gilroy-Regular';
 }
 .coins {
     width: 100%
@@ -1143,6 +1158,7 @@
     justify-items: center;
     font-size: 45px;
     padding-bottom: 15px;
+    font-family: 'Gilroy-Bold';
 }
 .trained {
     display:flex;
@@ -1179,17 +1195,21 @@
 }
 .trained > h1 {
     text-align: center;
+
 }
 .emoji, .tick, .small-coin > .under {
     text-align: center;
+   
 }
 .under > h1 {
     font-size: 30px;
     padding-bottom: 5px;
+    font-family: 'Gilroy-Bold';
 }
 @media (max-width: 768px) {
     .under > p{
         font-size: 20px;
+        font-family: 'Gilroy-Regular';
     }
 }
 .daya-squad {
@@ -1218,19 +1238,22 @@
     width: 50%;
     align-content: center;
     line-height: 1.5em;
+    font-family: 'Gilroy-Bold';
 }
 @media (max-width: 768px) {
     .squad-text{
-        width: 90%;
+         width: 90%;
          text-align: center;
          font-size: 18px;
          margin: auto;
          padding-bottom: 50px;
+         font-size: 17px;
     }
 }
 .squad-text > h1 {
     padding-bottom: 30px;
     line-height:1em;
+    font-family: 'Gilroy-Bold';
 }
 
 .squad-btn {
@@ -1254,6 +1277,7 @@
     position: relative;
     cursor: pointer;
     transition-duration: 0.4s;
+    font-family: 'Gilroy-SemiBold';
 }
 
 .squad-btn > button:hover {
@@ -1288,6 +1312,8 @@
        padding-top: 80px;
     }
 }
+
+
 .about {
     width: 100%;
     margin: auto;
@@ -1315,7 +1341,10 @@
 }
 @media (max-width: 768px) {
     .littler-about{
-      width: 85%
+      width: 85%;
+      font-size: 25px;
+      font-family: 'Gilroy-Bold';
+
     }
 }
 .littler-about > h2 {
@@ -1346,6 +1375,8 @@
     font-size: 24px;
     padding-top: 20px;
     padding-bottom: 20px;
+    color: #5B5B5B;
+    font-family: 'Gilroy-Regular';
 }
 .map {
     margin:auto;
@@ -1366,10 +1397,10 @@
 }
 @media (max-width: 768px) {
     .map > img {
-       width: 400px;
+       width: 300px;
        height: auto;
        position: relative;
-       right: 25%;
+       right: 20px;
     }
 }
 .african-population {
@@ -1383,6 +1414,7 @@
     margin: auto;
     text-align: center;
     line-height: 1.5em;
+    font-family: 'Gilroy-Medium';
 }
 @media (max-width: 768px) {
     .population {
